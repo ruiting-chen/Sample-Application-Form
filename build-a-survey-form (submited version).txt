@@ -1,0 +1,207 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Application form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">Application Form</h1>
+    <p id="description">Thank you for your interest in this position</p>
+    <div class="form">
+      <form id="survey-form">
+        <fieldset>
+          <!-- <legend id="name">Name</legend> -->
+          <label for="name" id="name-label" class="two_in_one_line">Name
+            <input id="name" type="text" placeholder="First Name" required>
+          </label>
+          <!-- <label for="last name" id="last-name-label" class="two_in_one_line">
+            <input id="last name" type="text" placeholder="Last Name" required>
+          </label> -->
+        </fieldset>
+        <fieldset>
+          <label for="student id" id="id-label" class="two_in_one_line">
+            Student Number <input id="student id" type="text" pattern="[0-9]" placeholder="Ex: 1234567890" required>
+          </label>
+          <label for="birthday" id="birthday-label" class="two_in_one_line">
+            Date of Birth (Optional) <input id="birthday" type="date" min="1900-01-01" max="2023-01-01">
+          </label>
+        </fieldset>
+        <fieldset>
+        <label for="dropdown" class="two_in_one_line">
+         Program of Study
+          <select id="dropdown" required>
+            <option value="">
+              Select your program
+            </option>
+            <option value="1">
+              Computer Science
+            </option>
+            <option value="2">
+              Statistics
+            </option>
+            <option value="3">
+              Math and Physics
+            </option>
+            <option value="4">
+              Economics
+            </option>
+            <option value="5">
+              Other
+            </option>
+          </select>
+        </label>
+        <label for="number" id="number-label" class="two_in_one_line">
+          Year of Study <input id="number" type="number" min="1" max="120" placeholder="Ex: 1">
+        </label>
+        <label for="email" id="email-label">
+            Email <input id="email" type="email" placeholder="Enter your Email" required>
+          </label>
+        </fieldset>
+        <fieldset>
+          <label for="resume" id="resume-label">
+            Upload your Resume/CV <input id="resume" type="file" required>
+        </fieldset>
+        <fieldset>
+          <label for="question 1">
+            Why are you interested in this position? (Optional)
+            <textarea id="question 1" placeholder="Enter your answer here (max 250 words)" rows="4" cols="30"></textarea>
+          </label>
+          <label for="question 2">
+            What makes you a goot fit for position? (Optional)
+            <textarea id="question 2" placeholder="Enter your answer here (max 250 words)" rows="4" cols="30"></textarea>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend id="avaliable day">When are you avaliable? (Check all that apply) </legend>
+          <label for="Monday" class="three_in_one_line">
+            <input type="checkbox" value="Monday" id="Monday"> Monday
+          </label>
+          <label for="Tuesday" class="three_in_one_line">
+            <input type="checkbox" value="Tuesday" id="Tuesday"> Tuesday
+          </label>
+          <label for="Wednesday" class="three_in_one_line">
+            <input type="checkbox" value="Wednesday" id="Wednesday"> Wednesday
+          </label>
+          <label for="Thursday" class="three_in_one_line">
+            <input type="checkbox" value="Thursday" id="Thursday"> Thursday
+          </label>
+          <label for="Friday" class="three_in_one_line">
+            <input type="checkbox" value="Friday" id="Friday"> Friday
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>
+            Subscribe to recieve job opportunities
+          </legend>
+          <label id="feedback 1" for="yes" class="two_in_one_line">
+            <input type="radio" name="subscribe" value="yes" id="yes"> Yes
+          </label>
+          <label id="feedback 2" for="maybe later" class="two_in_one_line">
+            <input type="radio" name="subscribe" value="maybe later" id="maybe later" > Maybe later
+          </label>
+        </fieldset>
+        <fieldset>
+          <label for="submit">
+            <input type="submit" id="submit">
+          </label>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  background-image: url(https://lh3.googleusercontent.com/pw/AIL4fc8GqNiRx6-djkoqgljZphNXq5QnfBK93KbzwDyqgnxXROTeim6TrcleEAFIRfvMHHKgJ39BZYTW8OdYB0LhywU1d3vw2Cu43b7Ua9Ki9E7d4P3GO07eBXUgj5MxVCmU8uxSeUywjmaV1NidgE23vpC0aE3O2g3xeFX6f6iksvjwOCc46IHsNAZAF3rHdYJctkzlB3ayIMmkQD6rRRTQMnrcKvhH3UDGVQY-LusnPWO5ZhV9oqIOkrODni3qQHlr7SgkSCMzpEziBHbPSlEJtgMpxy0KWF4l5J-V3lZ97hfsTTl4hOmd-KOfqqI6pe-vS278rtUFPlb_Vt2mzoCy5FzxCt3yUjWgLcmOT4EgvZ8Uv5tofBWJ04vdKnyu1Z4oj5TUckA2yF1bBF1Z_6G3ZwM0M3AV4brEbKWq_RmJLytTISNhQ_woGSTFhGxttyqXiiE9bR2wW9bKhoqZSaTyKZvEwfsCk5Bud0p9ln8Ro1BKNDlQZrmCoZ7jTLdl-onW_5pVSgkhyMYss_WcjMZCnlQbJUfuGW7pijbMmzsHXcqS0gZSKeXWwTgY7LJH-M-BXRB5eoTeKXmZwoLoyPryQO4Fol7Hlf4NhxBUjOzLNM51Ji-oDZP_2xAfFM8jTHsNvy0nJlr-Or2vcjIgSkJQ0hGng65ywOamWvHravfiAUa8Z93EoBCzBeIZP5S-7xjUBTXn25JIUizJIXEQeU9DlhmhR6wqnDWLmB_On3ktObThkEhy2XCKqZI4-qAgRjB8dKgnS-wYO1BtaXDDOmqN0hgv4gGtZz8dSoJM4ccaH9R-oayTa1VrqVQQ61b7v2mUxqHNf44bU2a_jysasepgTY-sw8HUKv6E_ozypfazBuBB1JpeQjQnjjaq578WvPNrnU02WH-kmWFuWNzqNlQxsRi0NKbDvCoNHw-1r_7l10itP8RAEJ3bMETO3MwJe1WmRJSAVQQpH74rJrBCxzvfx8cDg5D9Lhd3Q6072PYKZht-Gjs6VhMYUVt_-AiWOn4notnF=w1404-h936-s-no?authuser=0);
+  font-family: sans-serif;
+  padding: 20px;
+  max-height: 800px;
+}
+
+h1, p {
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  padding-top: 1.5rem;
+}
+
+.form {
+  background-color:rgba(40, 40, 74, 0.85);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  width: 80%;
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin: 1rem 0 0 0;
+}
+
+input,
+textarea,
+select {
+  margin: 0 auto;
+  width: 100%;
+  min-height: 1.6em;
+}
+
+.two_in_one_line{
+  width: 49%;
+  display: inline-block;
+}
+
+.three_in_one_line{
+  width: 32%;
+  display: inline-block;
+}
+
+label[id="name-label"], label[id="last-name-label"] {
+  margin-top: 0;
+}
+
+input[type="radio"], 
+input[type="checkbox"] {
+  width: unset;
+  vertical-align: middle;
+}
+
+legend{
+  padding-top: 1rem;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1rem;
+  background-color: #8c8cb8;
+  min-width: 300px;
+  color: white;
+}
+
+
+
+
+
+** end of undefined **
+

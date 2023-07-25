@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Application Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">Application Form</h1>
+    <p id="description">Thank you for your interest in this position</p>
+    <div class="form">
+      <form id="survey-form" method="post" action='after_submit.html'>
+        <fieldset>
+          <legend id="name">Name</legend>
+          <label for="name" id="name-label" class="two_in_one_line">
+            <input id="name" type="text" placeholder="First Name" required>
+          </label>
+          <label for="last name" id="last-name-label" class="two_in_one_line">
+            <input id="last name" type="text" placeholder="Last Name" required>
+          </label>
+        </fieldset>
+        <fieldset>
+          <label for="student id" id="id-label" class="two_in_one_line">
+            Student Number <input id="student id" type="text" pattern="[0-9]{8,12}" placeholder="Ex: 1234567890" required>
+          </label>
+          <label for="birthday" id="birthday-label" class="two_in_one_line">
+            Date of Birth (Optional) <input id="birthday" type="date" min="1900-01-01" max="2023-01-01">
+          </label>
+        </fieldset>
+        <fieldset>
+        <label for="dropdown" class="two_in_one_line">
+         Program of Study
+          <select id="dropdown" required>
+            <option value="">
+              Select your program
+            </option>
+            <option value="1">
+              Computer Science
+            </option>
+            <option value="2">
+              Statistics
+            </option>
+            <option value="3">
+              Math and Physics
+            </option>
+            <option value="4">
+              Economics
+            </option>
+            <option value="5">
+              Other
+            </option>
+          </select>
+        </label>
+        <label for="number" id="number-label" class="two_in_one_line">
+          Year of Study <input id="number" type="number" min="1" max="120" placeholder="Ex: 1">
+        </label>
+        <label for="email" id="email-label">
+            Email <input id="email" type="email" placeholder="Enter your Email" required>
+          </label>
+        </fieldset>
+        <fieldset>
+          <label for="resume" id="resume-label">
+            Upload your Resume/CV <input id="resume" type="file" required>
+        </fieldset>
+        <fieldset>
+          <label for="question 1">
+            Why are you interested in this position? (Optional)
+            <textarea id="question 1" placeholder="Enter your answer here (max 250 words)" rows="4" cols="30"></textarea>
+          </label>
+          <label for="question 2">
+            What makes you a goot fit for position? (Optional)
+            <textarea id="question 2" placeholder="Enter your answer here (max 250 words)" rows="4" cols="30"></textarea>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend id="avaliable day">When are you avaliable? (Check all that apply) </legend>
+          <label for="Monday" class="three_in_one_line">
+            <input type="checkbox" value="Monday" id="Monday"> Monday
+          </label>
+          <label for="Tuesday" class="three_in_one_line">
+            <input type="checkbox" value="Tuesday" id="Tuesday"> Tuesday
+          </label>
+          <label for="Wednesday" class="three_in_one_line">
+            <input type="checkbox" value="Wednesday" id="Wednesday"> Wednesday
+          </label>
+          <label for="Thursday" class="three_in_one_line">
+            <input type="checkbox" value="Thursday" id="Thursday"> Thursday
+          </label>
+          <label for="Friday" class="three_in_one_line">
+            <input type="checkbox" value="Friday" id="Friday"> Friday
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>
+            Subscribe to recieve job opportunities
+          </legend>
+          <label id="feedback 1" for="yes" class="two_in_one_line">
+            <input type="radio" name="subscribe" value="yes" id="yes"> Yes
+          </label>
+          <label id="feedback 2" for="maybe later" class="two_in_one_line">
+            <input type="radio" name="subscribe" value="maybe later" id="maybe later" > Maybe later
+          </label>
+        </fieldset>
+        <fieldset>
+          <label for="submit">
+            <input type="submit" id="submit">
+          </label>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

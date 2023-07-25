@@ -1,0 +1,84 @@
+body {
+  background-image: url(background.jpg);
+  font-family: sans-serif;
+  padding: 20px;
+  max-height: 800px;
+}
+
+h1, p {
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  padding-top: 1.5rem;
+}
+
+.form {
+  background-color:rgba(40, 40, 74, 0.85);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  width: 80%;
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin: 1rem 0 0 0;
+}
+
+input,
+textarea,
+select {
+  margin: 0 auto;
+  width: 100%;
+  min-height: 1.6em;
+}
+
+.two_in_one_line{
+  width: 49%;
+  display: inline-block;
+}
+
+.three_in_one_line{
+  width: 32%;
+  display: inline-block;
+}
+
+label[id="name-label"], label[id="last-name-label"] {
+  margin-top: 0;
+}
+
+input[type="radio"], 
+input[type="checkbox"] {
+  width: unset;
+  vertical-align: middle;
+}
+
+legend{
+  padding-top: 1rem;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1rem;
+  background-color: #8c8cb8;
+  min-width: 300px;
+  color: white;
+}
+
+
+
